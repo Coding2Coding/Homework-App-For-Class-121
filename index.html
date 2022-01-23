@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Homework App For Class 120</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    </head>
+    <body id="bodyTag">
+        <center>
+            <ol>
+                <div class="resultAndTestImage col-xs-12">
+                    <div class="col-sm-4 col-xs-12">
+                        <b style="font-size: 20px;">Test Image: </b>
+                        <br>
+                        <img src="images.jpg">
+                    </div>
+                    <h4 style="color: rgb(220, 159, 255); background: rgb(255, 232, 255); border-style: dotted; border-width: 4px; border-color: rgb(210, 230, 255);" class="col-sm-4 col-xs-12">
+                        The output on <b>"Google Lens"</b>: 
+                        <span id="googleLensResult"> metal spoon/regular spoon</span>
+                    </h4>
+                    <h4 style="color: rgb(148, 196, 255); background: rgb(210, 230, 255); border-style: dotted; border-width: 4px; border-color: rgb(255, 232, 255);" class="col-sm-4 col-xs-12">
+                        The output on the <b>"MobileNet Model"</b>: 
+                        <span id="mobileNetResult">bubble</span>
+                    </h4>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div style="margin-top: 20px;" class="resultLabel col-xs-12">
+                        <h4 style="font-size: 32px">Results: </h4>
+                        <hr>
+                        <h4 id="comparisonBetweenBothOutputs">"Google Lens" has a better output than the "MobileNet Model"</h4>
+                    </div>
+                </div>
+            </ol>
+        </center>
+    </body>
+    <script src = "script.js"></script>
+</html>
